@@ -173,7 +173,7 @@ function _CalendarBody<T>({
   const _renderMappedEvent = (event: ICalendarEvent<T>, _cellWidth = 6) => {
     return (
       <CalendarEvent
-        key={event.id?.toString()}
+        key={event.key}
         event={event}
         onPressEvent={onPressEvent}
         eventCellStyle={eventCellStyle}
